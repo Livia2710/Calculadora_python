@@ -4,7 +4,7 @@ Aplicação desktop desenvolvida em **Python**, com interface gráfica moderna u
 O projeto foi criado com foco em prática de **programação orientada a objetos**, eventos, layout responsivo e personalização visual.
 
 ## Preview
-![Preview da aplicação](assets/calculadora.gif)
+![Preview da aplicação](calculadora.png)
 
 ## Funcionalidades
 - Operações matemáticas básicas (+, -, x, ÷)
