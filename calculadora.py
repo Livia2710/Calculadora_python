@@ -38,7 +38,6 @@ class Calculadora:
 
         # Configuração do icone da janela
         icon_path = resource_path("calc.ico")
-        self.janela.iconbitmap(icon_path) # Define o icone da janela
 
         # Frame para o display
         self.frame_display = ttk.Frame(self.janela) # Cria um frame 
@@ -89,16 +88,6 @@ class Calculadora:
         # Frame para a imagem SENAI
         self.frame_imagem = ttk.Frame(self.janela)
         self.frame_imagem.pack(fill='both', expand=True, pady=10)
-
-        # Carregando e exibindo a imagem SENAI
-        imagem_path = resource_path("Senai.png")
-        imagem = Image.open(imagem_path)
-        imagem = imagem.resize((300, 100), Image.LANCZOS) # Redimensiona a imagem mantendo a qualidade
-        imagem_tk = ImageTk.PhotoImage(imagem) # Converte a imagem para um formato competivel com tkinter
-
-        label_imagem = ttk.Label(self.frame_imagem, image=imagem_tk, text="") # Cria um rotulo para exibir a imagem
-        label_imagem.image = imagem_tk # Mantém uma referencia para a imagem (necessário para evitar que a imagems seja destruida pelo garbage collector)
-        label_imagem.pack() #Adiciona o rotulo ao frame
 
         # Frame para o seletor de temas
         self.frame_tema = ttk.Frame(self.janela)
